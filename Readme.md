@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [perian](https://up.htmlacademy.ru/htmlcss/28/user/11132).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/id252055).
 
 ---
 
