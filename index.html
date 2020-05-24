@@ -3,22 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
     <header>
       <nav>
         <a>
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">Логотип Глейси
         </a>
         <ul>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li>
+            <a href="catalog.html">Каталог</a>
+            <ul>
+              <li><a href="blank.html">Новинки</a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
+              <li><a href="blank.html">Щербеты</a></li>
+              <li><a href="blank.html">Фруктовый лед</a></li>
+              <li><a href="blank.html">Мелорин</a></li>
+            </ul>
+          </li>
           <li><a href="blank.html">Доставка и оплата</a></li>
           <li><a href="blank.html">О Компании</a></li>
         </ul>
         <div>
-          <span>Поиск</span>
-          <a href="">Вход</a>
-          <a href="">Корзина<span>Пусто</span></a>
+          <form action="https://echo.htmlacademy.ru/courses" method="post">
+            <a href="">Поиск</a>
+            <div>
+              <label for="search" arial-label="Поле поиска"></label>
+              <input type="search" id="search" name="search" placeholder="Что ищем?">
+            </div>
+
+            <a href="">Вход</a>
+            <div>
+              <label for="login-email" aria-label="Введите ваш адрес электронной почты"></label>
+              <input type="email" id="login-email" name="login-email" placeholder="Электронная почта" required>
+
+              <label for="login-password" aria-label="Введите ваш пароль"></label>
+              <input type="password" id="login-password" name="login-password" placeholder="Пароль" required>
+
+              <button type="submit">Войти</button>
+              <a href="">Забыли пароль?</a>
+              <a href="">Новая регистрация</a>
+            </div>
+
+            <a href="">Корзина<span>Пусто</span></a>
+          </form>
         </div>
       </nav>
 
@@ -67,26 +96,26 @@
       <section>
         <ul>
           <li>
-            <img src="./img/ice-cream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <span>Хит</span>
+            <img src="./img/ice-cream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <p>310 &#8381;<span>/кг</span></p>
             <a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </li>
           <li>
-            <img src="./img/ice-cream-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             <span>Хит</span>
+            <img src="./img/ice-cream-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             <p>380 &#8381;<span>/кг</span></p>
             <a href="">Сливочно-кофейное с кусочками шоколада</a>
           </li>
           <li>
-            <img src="./img/ice-cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <span>Хит</span>
+            <img src="./img/ice-cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <p>355 &#8381;<span>/кг</span></p>
             <a href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </li>
           <li>
-            <img src="./img/ice-cream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             <span>Хит</span>
+            <img src="./img/ice-cream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             <p>415 &#8381;<span>/кг</span></p>
             <a href="">Сливочное крем-брюле с карамельной подливкой</a>
           </li>
@@ -94,12 +123,29 @@
       </section>
 
       <section>
+        <h1 class="visually-hidden">Преимущества Глэйси.</h1>
         <p>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</p>
         <ul>
-          <li><p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p></li>
-          <li><p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p></li>
-          <li><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p></li>
-          <li><p>Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></li>
+          <li>
+            <p>
+              Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+            </p>
+          </li>
+          <li>
+            <p>
+              Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+            </p>
+          </li>
+          <li>
+            <p>
+              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+            </p>
+          </li>
+          <li>
+            <p>
+              Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            </p>
+          </li>
         </ul>
       </section>
 
@@ -109,23 +155,29 @@
       </article>
 
       <section>
-        <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <span>email</span>
-        <button type="submit">Отправить</button>
+        <p>
+          Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+        </p>
+        <form class="" action="https://echo.htmlacademy.ru/courses" method="post">
+          <label for="subscription" aria-label="Введите ваш адрес электронной почты"></label>
+          <input type="email" id="subscription" name="subscription" placeholder="Электронная почта">
+
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+
+      <section>
+        <div>
+            <img src="./img/map.png" width="1200" height="430" alt="Показано расположение магазина на карте города">
+        </div>
+        <section>
+            <p>Адрес главного офиса и офлайн-магазина: <b>ул. Большая Конюшенная, 19/8, Санкт-Петербург</b></p>
+            <p>Для заказов по телефону: <a href="tel:88124502525">8 812 450-25-25</a> (с 10 до 20 ежедневно)</p>
+
+            <a href="">Форма обратной связи</a>
+        </section>
       </section>
     </main>
-
-    <section>
-      <div>
-          <img src="./img/map.png" width="1200" height="430" alt="Указано расположение магазина на карте города">
-      </div>
-      <section>
-          <p>Адрес главного офиса и офлайн-магазина: <b>ул. Большая Конюшенная, 19/8, Санкт-Петербург</b></p>
-          <p>Для заказов по телефону: <a href="tel:88124502525">8 812 450-25-25</a> (с 10 до 20 ежедневно)</p>
-
-          <a href="">Форма обратной связи</a>
-      </section>
-    </section>
 
     <footer>
       <div>
@@ -152,5 +204,25 @@
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2019
       </p>
     </footer>
+
+    <section class="visually-hidden">
+      <p>Мы обязательно вам ответим!</p>
+      <form class="" action="https://echo.htmlacademy.ru/courses" method="post">
+        <div>
+          <label for="name" aria-label="Введите ваше имя"></label>
+          <input type="text" id="name" name="name" placeholder="Как вас зовут?" required>
+
+          <label for="email" aria-label="Введите вашу почту"></label>
+          <input type="email" id="email" name="email" placeholder="Ваша почта для ответа?" required>
+        </div>
+
+        <textarea name="custumer-appeal" rows="8" cols="40" placeholder="Напишите что-нибудь..." aria-label="Впишите ваш вопрос" required></textarea>
+
+        <div>
+          <button type="submit">Отправить</button>
+        </div>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
   </body>
 </html>

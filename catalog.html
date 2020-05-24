@@ -8,13 +8,14 @@
     <header>
       <nav>
         <a href="index.html">
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">Логотип Глейси
         </a>
         <ul>
-          <li><a>Каталог</a>
+          <li>
+            <a>Каталог</a>
             <ul>
               <li><a href="blank.html">Новинки</a></li>
-              <li><a href="blank.html">Сливочное</a></li>
+              <li><a>Сливочное</a></li>
               <li><a href="blank.html">Щербеты</a></li>
               <li><a href="blank.html">Фруктовый лед</a></li>
               <li><a href="blank.html">Мелорин</a></li>
@@ -24,9 +25,42 @@
           <li><a href="blank.html">О Компании</a></li>
         </ul>
         <div>
-          <span>Поиск</span>
-          <a href="">Вход</a>
-          <a href="">Корзина<span>2 товара</span></a>
+          <form action="https://echo.htmlacademy.ru/courses" method="post">
+            <a href="">Поиск</a>
+            <div>
+              <label for="search" arial-label="Поле поиска"></label>
+              <input type="search" id="search" name="search" placeholder="Что ищем?">
+            </div>
+
+            <a href="">Вход</a>
+            <div>
+              <label for="login-email" aria-label="Введите ваш адрес электронной почты"></label>
+              <input type="email" id="login-email" name="login-email" placeholder="Электронная почта" required>
+              <label for="login-password" aria-label="Введите ваш пароль"></label>
+              <input type="password" id="login-password" name="login-password" placeholder="Пароль" required>
+            </div>
+
+            <a href="">Корзина<span>2 товара</span></a>
+            <div>
+              <div>
+                <img src="./img/ice-cream-1-small.jpg" width="33" height="33" alt="Ярко оранжевое мороженое">
+                <p>Пломбир с апельсиновым джемом</p>
+                <p>1,5 кг &#215; <span>200 руб.</span></p>
+                <p>300 руб.</p>
+                <button type="button">Удалить позицию</button>
+              </div>
+              <div>
+                <img src="./img/ice-cream-3-small.jpg" width="33" height="33" alt="Розовое мороженное покрытое белой присыпкой">
+                <p>Клубничный пломбир с присыпкой из белого шоколада</p>
+                <p>1,5 кг &#215; <span>300 руб.</span></p>
+                <p>450 руб.</p>
+                <button type="button">Удалить позицию</button>
+              </div>
+              <hr>
+              <p>Итого: 750 руб.</p>
+              <button type="submit" name="make-order">Оформить заказ</button>
+            </div>
+          </form>
         </div>
       </nav>
 
@@ -142,5 +176,25 @@
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2019
       </p>
     </footer>
+
+    <section class="visually-hidden">
+      <p>Мы обязательно вам ответим!</p>
+      <form class="" action="https://echo.htmlacademy.ru/courses" method="post">
+        <div>
+          <label for="name" aria-label="Введите ваше имя"></label>
+          <input type="text" id="name" name="name" placeholder="Как вас зовут?" required>
+
+          <label for="email" aria-label="Введите вашу почту"></label>
+          <input type="email" id="email" name="email" placeholder="Ваша почта для ответа?" required>
+        </div>
+
+        <textarea name="custumer-appeal" rows="8" cols="40" placeholder="Напишите что-нибудь..." required></textarea>
+
+        <div>
+          <button type="submit">Отправить</button>
+        </div>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
   </body>
 </html>
