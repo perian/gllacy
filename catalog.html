@@ -7,8 +7,8 @@
   <body>
     <header>
       <nav>
-        <a href="index.html">
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси.">Логотип Глейси
+        <a aria-label="Логотип Глейси.">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси.">
         </a>
         <ul>
           <li>
@@ -25,14 +25,16 @@
           <li><a href="blank.html">О Компании</a></li>
         </ul>
         <div>
-          <form action="https://echo.htmlacademy.ru/courses" method="post">
-            <a href="">Поиск</a>
+          <a href="">Поиск</a>
+          <form action="https://echo.htmlacademy.ru" method="post">
             <div>
               <label class="visually-hidden" for="search">Поле поиска</label>
               <input type="search" id="search" name="search" placeholder="Что ищем?">
             </div>
+          </form>
 
-            <a href="">Вход</a>
+          <a href="">Вход</a>
+          <form action="https://echo.htmlacademy.ru" method="post">
             <div>
               <label class="visually-hidden" for="login-email">Введите адрес электронной почты.</label>
               <input type="email" id="login-email" name="login-email" placeholder="Электронная почта" required>
@@ -40,32 +42,32 @@
               <label class="visually-hidden" for="login-password">Введите ваш пароль.</label>
               <input type="password" id="login-password" name="login-password" placeholder="Пароль" required>
             </div>
-
-            <a href="">Корзина<span>2 товара</span></a>
-            <div>
-              <div>
-                <img src="./img/ice-cream-1-small.jpg" width="33" height="33" alt="Ярко оранжевое мороженое.">
-                <p>Пломбир с апельсиновым джемом</p>
-                <p>1,5 кг &#215; <span>200 руб.</span></p>
-                <p>300 руб.</p>
-                <button type="button">Удалить позицию из корзины</button>
-              </div>
-              <div>
-                <img src="./img/ice-cream-3-small.jpg" width="33" height="33" alt="Розовое мороженое покрытое белой присыпкой.">
-                <p>Клубничный пломбир с присыпкой из белого шоколада</p>
-                <p>1,5 кг &#215; <span>300 руб.</span></p>
-                <p>450 руб.</p>
-                <button type="button">Удалить позицию из корзины</button>
-              </div>
-              <hr>
-              <p>Итого: 750 руб.</p>
-              <button type="submit" name="make-order">Оформить заказ</button>
-            </div>
           </form>
+
+          <a href="">Корзина<span>2 товара</span></a>
+          <div>
+            <div>
+              <img src="./img/ice-cream-1-small.jpg" width="33" height="33" alt="Ярко оранжевое мороженое.">
+              <p>Пломбир с апельсиновым джемом</p>
+              <p>1,5 кг &#215; <span>200 руб.</span></p>
+              <p>300 руб.</p>
+              <button type="button">Удалить позицию из корзины</button>
+            </div>
+            <div>
+              <img src="./img/ice-cream-3-small.jpg" width="33" height="33" alt="Розовое мороженое покрытое белой присыпкой.">
+              <p>Клубничный пломбир с присыпкой из белого шоколада</p>
+              <p>1,5 кг &#215; <span>300 руб.</span></p>
+              <p>450 руб.</p>
+              <button type="button">Удалить позицию из корзины</button>
+            </div>
+            <hr>
+            <p>Итого: 750 руб.</p>
+            <a href="">Оформить заказ</button>
+          </div>
         </div>
       </nav>
 
-      <ul>
+      <ul aria-label="Хлебные крошки">
         <li><a href="index.html">Главная</a></li>
         <li><a href="">Каталог</a></li>
         <li>Сливочное</li>
@@ -173,29 +175,9 @@
       </section>
 
       <p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy"></a>
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169; 2019
       </p>
     </footer>
-
-    <section class="visually-hidden">
-      <p>Мы обязательно вам ответим!</p>
-      <form class="" action="https://echo.htmlacademy.ru/courses" method="post">
-        <div>
-          <label class="visually-hidden" for="name">Введите ваше имя.</label>
-          <input type="text" id="name" name="name" placeholder="Как вас зовут?" required>
-
-          <label class="visually-hidden" for="email">Введите вашу почту.</label>
-          <input type="email" id="email" name="email" placeholder="Ваша почта для ответа?" required>
-        </div>
-
-        <textarea name="custumer-appeal" rows="8" cols="40" placeholder="Напишите что-нибудь..." aria-label="Впишите ваш вопрос." required></textarea>
-
-        <div>
-          <button type="submit">Отправить</button>
-        </div>
-      </form>
-      <button type="button">Закрыть</button>
-    </section>
   </body>
 </html>
