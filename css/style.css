@@ -1,0 +1,24 @@
+:root {
+  --black: #000000; /*basket-item-weight*/
+  --black-dark: #2c2829; /*close-button bg*/
+  --black-light: #323232; /*gllacy advantages text, blog-section, request block, basket-item-price*/
+  --black-lightest: #353535; /*block-link-underline*/
+  --blue: #8996a6; /*background-green*/
+  --brown: #53301c; /*banner-chocolate-bg*/
+  --brown-pale: #9d8b84; /*background-brown*/
+  --gray: #cacac7; /*hr*/
+  --gray-dark: #999999; /*subscription-placeholderS*/
+  --gray-darkest: #5a5a5a; /*subscription-text*/
+  --gray-pale: #f8f7f4; /*subscription, basket*/
+  --gray-pale-transparent: rgba(178, 178, 178, 0.52); /*subscription-border-color*/
+  --gray-transparent: rgba(49, 50, 53, 0.5); /*catalog-prices-text-shadow*/
+  --green: #849d8f; /*background-green*/
+  --red: #e84d37; /*map-pin*/
+  --red-dark: #94000d; /*banner-raspberry-bg*/
+  --red-gradient: linear-gradient(180deg, #f26843 0%, #e74a35 100%); /*button-bg*/
+  --red-pale: #fbded7; /*list-dropdown-bg*/
+  --red-transparent: rgba(172, 16, 0, 0.64); /*button-shadow*/
+  --white: #ffffff;
+  --white-pale: rgba(255, 255, 255, 0.8); /*socials-bg*/
+  --white-transparent: rgba(255, 255, 255, 0.2); /*icon/forms - backgroundS, link-underline,catalog-item-bg*/
+}
