@@ -226,8 +226,17 @@ body {
   color: var(--gray-darkest);
 }
 
+.subscription-input {
+  font: inherit;
+  font-weight: bold;
+  color: var(--black-light);
+
+  background-color: var(--white)
+}
+
 .subscription ::placeholder {
   line-height: 24px;
+  font-weight: normal;
 }
 
 .contacts {
@@ -249,7 +258,6 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: var(--black-light);
-  color: #323232;
 }
 
 .socials ul {
