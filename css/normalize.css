@@ -3,6 +3,8 @@
 /* Document
    ========================================================================== */
 
+*, *::before, *::after { box-sizing: border-box; }
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -64,6 +66,7 @@ pre {
  */
 
 a {
+  text-decoration: none;
   background-color: transparent;
 }
 
@@ -95,6 +98,8 @@ strong {
  */
 
 img {
+  max-width: 100%;
+  height: auto;
   border-style: none;
 }
 
@@ -102,7 +107,7 @@ img {
    ========================================================================== */
 
 /**
- * 1. Change the font styles in all browsers.
+ * 1. Change the font sty: ;les in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
 
