@@ -45,8 +45,6 @@ body {
   padding-right: 27px;
   padding-left: 27px;
 
-  font-style: normal;
-  font-style: normal;
   font-size: 16px;
   line-height: 22px;
   font-family: "Roboto", "Arial", sans-serif;
@@ -70,8 +68,7 @@ body {
 }
 
 .button {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: var(--white);
@@ -88,16 +85,12 @@ body {
   background: var(--button-bg-active);
 }
 
-::placeholder {
-  color: var(--gray-dark);
-}
-
 .site-navigation {
   list-style: none;
 }
 
 .site-navigation a {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   text-decoration: underline;
@@ -150,16 +143,12 @@ body {
   background-color: var(--white);
 }
 
-.basket span {
-  font-size: 0;
-}
-
 .basket-items {
   display: none;
 }
 
 .schedule {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
 }
@@ -198,7 +187,7 @@ body {
 }
 
 .blog-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: var(--link-dark);
@@ -228,19 +217,19 @@ body {
 
 .subscription-input {
   font: inherit;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 24px;
   color: var(--black-light);
 
-  background-color: var(--white)
+  background-color: var(--white);
 }
 
-.subscription ::placeholder {
+.subscription-input::placeholder {
   line-height: 24px;
-  font-weight: normal;
+  color: var(--gray-dark);
 }
 
 .contacts {
-  font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: var(--black-light);
@@ -254,7 +243,7 @@ body {
 }
 
 .phone {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: var(--black-light);
@@ -270,8 +259,7 @@ body {
   background-color: var(--white-pale);
 }
 
-.about-us a,
-.made-in-html-academy a {
+.about-us a {
   font-size: 13px;
   line-height: 18px;
 }
@@ -309,6 +297,7 @@ body {
 .made-in-html-academy,
 .made-in-html-academy a {
   font-size: 12px;
+  line-height: 18px;
 }
 
 .breadcrumps {
@@ -318,7 +307,7 @@ body {
 }
 
 .main-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 35px;
   line-height: 41px;
 }
@@ -340,15 +329,19 @@ body {
 }
 
 .item .price {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 45px;
   line-height: 45px;
 }
 
 .item .weight {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 30px;
   line-height: 35px;
+}
+
+.item .description {
+  font-weight: 500;
 }
 
 .about-us ul {
