@@ -1,6 +1,7 @@
 :root {
   --black: #000000; /*basket-item-weight*/
   --black-dark: #2c2829; /*close-button bg*/
+  --black-darkest: #231f20; /*hits*/
   --black-light: #323232; /*gllacy advantages text, blog-section, request block, basket-item-price*/
   --blue: #8996a6; /*background-green*/
   --brown: #53301c; /*banner-chocolate-bg*/
@@ -74,15 +75,33 @@ body {
   color: var(--white);
   text-decoration: none;
 
-  background: var(--button-bg);
+  background-image: var(--button-bg);
 }
 
 .button:hover {
-  background: var(--button-bg-hover);
+  background-image: var(--button-bg-hover);
 }
 
 .button:active {
-  background: var(--button-bg-active);
+  background-image: var(--button-bg-active);
+}
+
+.button-white {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(---white);
+
+  background-color: var(--white-transparent);
+  background-image: none;
+}
+
+.button-white:hover,
+.button-white:active {
+  color: var(--black-light);
+
+  background-color: var(--white);
+  background-image: none;
 }
 
 .site-navigation {
@@ -264,10 +283,10 @@ body {
   line-height: 18px;
 }
 
-.item .description,
 .about-us a,
 .breadcrumps a,
-.made-in-html-academy a {
+.made-in-html-academy a,
+.catalog-item .description {
   color: var(--link);
   text-decoration: underline;
 
@@ -283,12 +302,12 @@ body {
 .breadcrumps a:hover,
 .breadcrumps a:active,
 .breadcrumps a:focus,
-.item .description:hover,
-.item .description:active,
-.item .description:focus,
 .html-academy-link:hover,
 .html-academy-link:active,
-.html-academy-link:focus {
+.html-academy-link:focus,
+.catalog-item .description:hover,
+.catalog-item .description:active,
+.catalog-item .description:focus {
   color: var(--link-hover);
 
   text-decoration-color: var(--link-hover-underline);
@@ -312,38 +331,135 @@ body {
   line-height: 41px;
 }
 
-.catalog .list {
+.catalog-list {
   list-style: none;
 }
 
-.item:hover {
+.catalog-item:hover {
   background-color: var(--white-transparent);
 }
 
-.item .button {
+.catalog-item .hit {
+  color: var(--black-darkest);
+
+  background-color: var(--white);
+}
+
+.catalog-item .button {
   display: none;
 }
 
-.item:hover .button {
+.catalog-item:hover .button {
   display: inline-block;
 }
 
-.item .price {
+.catalog-item .price {
   font-weight: 700;
   font-size: 45px;
   line-height: 45px;
 }
 
-.item .weight {
+.catalog-item .weight {
   font-weight: 700;
   font-size: 30px;
   line-height: 35px;
 }
 
-.item .description {
+.catalog-item .description {
   font-weight: 500;
 }
 
 .about-us ul {
   list-style: none;
+}
+
+.slider ul {
+  list-style: none;
+}
+
+.slider .description {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.banners {
+  font-weight: 700;
+}
+
+.banners ul {
+  list-style: none;
+}
+
+.banners-item .title {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.banners-item .description {
+  font-size: 18px;
+}
+
+.main-form,
+.main-form .filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white);
+}
+
+.main-form .price-min,
+.main-form .price-max,
+.main-form .subtitle {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.main-form .price-min,
+.main-form .price-max {
+  font-weight: 500;
+  color: var(--white);
+
+  background-color: transparent;
+}
+
+.filter,
+.fatness
+.filler,
+.price-range {
+  background-color: var(--white-transparent);
+}
+
+.filler ul,
+.fatness ul {
+  list-style: none;
+}
+
+.pagination {
+  list-style: none;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.arrow-back a,
+.arrow-forward a,
+.pagination-item a {
+  color: var(--white);
+}
+
+.pagination-item a:hover {
+  background-color: var(--white-transparent);
+}
+
+.pagination-item a:active,
+.pagination-item a:not([href]) {
+  color: var(--black-light);
+
+  background-color: var(--white);
+}
+
+.arrow-back a:not([href]),
+.arrow-forward a:not([href]) {
+  color: var(--white-transparent);
 }

@@ -92,11 +92,11 @@
     <main class="main">
       <h1 class="main-title">Сливочное мороженое</h1>
 
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
         <div>
-          <label for="filter">Сортировка:</label>
+          <label class="subtitle" for="filter">Сортировка:</label>
           <div>
-            <select id="filter" name="filter">
+            <select class="filter" id="filter" name="filter">
               <option value="by popularity">по популярности</option>
               <option value="cheap first">сначала недорогие</option>
               <option value="expensive first">сначала дорогие</option>
@@ -106,13 +106,13 @@
         </div>
 
         <div>
-          <label for="price-min" aria-label="Выбрать минимальную цену">Цена:
-            <input id="price-min" type="text" name="range" value=100> ₽
+          <label class="subtitle" for="price-min" aria-label="Выбрать минимальную цену">Цена:
+            <input class="price-min" id="price-min" type="text" name="range" value=100> ₽
           </label>
 
           <span> - </span>
 
-          <input id="price-max" type="text" name="range" value="500">
+          <input class="price-max" id="price-max" type="text" name="range" value="500">
           <label for="price-max" aria-label="Выбрать максимуальную цену"> ₽</label>
 
           <div class="price-range">
@@ -123,8 +123,8 @@
           </div>
         </div>
 
-        <fieldset>
-          <legend>Жирность:</legend>
+        <fieldset class="fatness">
+          <legend class="subtitle">Жирность:</legend>
           <ul>
             <li>
               <input type="radio" name="fat" value="fat-0%" id="fat-0">
@@ -145,8 +145,8 @@
           </ul>
         </fieldset>
 
-        <fieldset>
-          <legend>Наполнители:</legend>
+        <fieldset class="filler">
+          <legend class="subtitle">Наполнители:</legend>
           <ul>
             <li>
               <input type="checkbox" name="chocolate" id="chocolate" checked>
@@ -170,78 +170,78 @@
           </ul>
         </fieldset>
 
-        <button type="submit">Применить</button>
+        <button class="button button-white" type="submit">Применить</button>
       </form>
 
       <section class="catalog">
-        <ul class="list">
-          <li class="item">
+        <ul class="catalog-list">
+          <li class="catalog-item">
             <img src="./img/ice-cream-1.jpg" width="267" height="267" alt="Ярко-оранжевое мороженое.">
             <p class="price">310 &#8381;<span class="weight">/кг</span></p>
             <a class="description" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <a class="button" href="">Быстрый просмотр</a>
           </li>
-          <li class="item">
+          <li class="catalog-item">
             <img src="./img/ice-cream-2.jpg" width="267" height="267" alt="Кофейное мороженое присыпано шоколадом.">
             <p class="price">380 &#8381;<span class="weight">/кг</span></p>
             <a class="description" href="">Сливочно-кофейное с кусочками шоколада</a>
             <a class="button" href="">Быстрый просмотр</a>
           </li>
-          <li class="item">
+          <li class="catalog-item">
             <img src="./img/ice-cream-3.jpg" width="267" height="267" alt="Розовое мороженое покрытое белой присыпкой.">
             <p class="price">355 &#8381;<span class="weight">/кг</span></p>
             <a class="description" href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
             <a class="button" href="">Быстрый просмотр</a>
           </li>
-          <li class="item">
+          <li class="catalog-item">
             <img src="./img/ice-cream-4.jpg" width="267" height="267" alt="Бежево-ванильное мороженое с карамельным соусом.">
             <p class="price">415 &#8381;<span class="weight">/кг</span></p>
             <a class="description" href="">Сливочное крем-брюле с карамельной подливкой</a>
             <a class="button" href="">Быстрый просмотр</a>
           </li>
-          <li class="item">
+          <li class="catalog-item">
             <img src="./img/ice-cream-5.jpg" width="267" height="267" alt="Бледно-красное мороженое.">
             <p class="price">325 &#8381;<span class="weight">/кг</span></p>
             <a class="description" href="">Сливочное с брусничным джемом</a>
             <a class="button" href="">Быстрый просмотр</a>
           </li>
-          <li class="item">
+          <li class="catalog-item">
             <img src="./img/ice-cream-6.jpg" width="267" height="267" alt="Нежно-сиреневое мороженое с ягодами черники.">
             <p class="price">410 &#8381;<span class="weight">/кг</span></p>
             <a class="description" href="">Сливочно-черничное с цельными ягодами черники</a>
             <a class="button" href="">Быстрый просмотр</a>
           </li>
-          <li class="item">
+          <li class="catalog-item">
             <img src="./img/ice-cream-7.jpg" width="267" height="267" alt="Солнечно-желтое мороженое с разноцветной присыпкой.">
             <p class="price">375 &#8381;<span class="weight">/кг</span></p>
             <a class="description" href="">Сливочно-лимонное с карамельной присыпкой</a>
             <a class="button" href="">Быстрый просмотр</a>
           </li>
-          <li class="item">
+          <li class="catalog-item">
             <img src="./img/ice-cream-8.jpg" width="267" height="267" alt="Пломбир посыпанный тертым шоколадом.">
             <p class="price">320 &#8381;<span class="weight">/кг</span></p>
             <a class="description" href="">Сливочное с шоколадной стружкой</a>
             <a class="button" href="">Быстрый просмотр</a>
           </li>
-          <li class="item">
+          <li class="catalog-item">
             <img src="./img/ice-cream-9.jpg" width="267" height="267" alt="Ванильный пломбир с кусочками шоколада.">
             <p class="price">440 &#8381;<span class="weight">/кг</span></p>
             <a class="description" href="">Сливочно-ванильное с кусочками шоколада</a>
             <a class="button" href="">Быстрый просмотр</a>
           </li>
-          <li class="item">
+          <li class="catalog-item">
             <img src="./img/ice-cream-10.jpg" width="267" height="267" alt="Освежающее голубое мороженое.">
             <p class="price">435 &#8381;<span class="weight">/кг</span></p>
             <a class="description" href="">Сливочноe с ментоловым сиропом</a>
             <a class="button" href="">Быстрый просмотр</a>
           </li>
-          <li class="item">
+          <li class="catalog-item">
             <img src="./img/ice-cream-11.jpg" width="267" height="267" alt="Пломбир посыпанный кусочками черного шоколада.">
             <p class="price">335 &#8381;<span class="weight">/кг</span></p>
             <a class="description" href="">Сливочное с кусочками черного шоколада</a>
             <a class="button" href="">Быстрый просмотр</a>
           </li>
-          <li class="item">
+          <li class="catalog-item">
             <img src="./img/ice-cream-12.jpg" width="267" height="267" alt="Мороженное нежно-зеленого цвета.">
             <p class="price">420 &#8381;<span class="weight">/кг</span></p>
             <a class="description" href="">Сливочное с мятным сиропом</a>
@@ -249,14 +249,14 @@
           </li>
         </ul>
 
-        <ul>
-          <li><a>&#60;</a></li>
-          <li><a>1</a></li>
-          <li><a href="">2</a></li>
-          <li><a href="">3</a></li>
-          <li><a href="">4</a></li>
-          <li><a href="">5</a></li>
-          <li><a href="">&#62;</a></li>
+        <ul class="pagination">
+          <li class="arrow-back"><a>&#60;</a></li>
+          <li class="pagination-item"><a>1</a></li>
+          <li class="pagination-item"><a href="">2</a></li>
+          <li class="pagination-item"><a href="">3</a></li>
+          <li class="pagination-item"><a href="">4</a></li>
+          <li class="pagination-item"><a href="">5</a></li>
+          <li class="arrow-forward"><a href="">&#62;</a></li>
         </ul>
       </section>
     </main>
