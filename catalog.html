@@ -9,7 +9,7 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <div class="main-wrapper header-wrapper">
+      <div class="wrapper header-wrapper">
         <nav class="main-navigation">
           <a class="main-logo-link" href="index.html" aria-label="Логотип Глейси.">
             <img class="main-logo" src="img/logo.svg" width="154" height="64" alt="Логотип Глейси.">
@@ -82,57 +82,64 @@
           </div>
         </nav>
 
-        <ul class="breadcrumps">
-          <li><a class="breadcrumps-link" href="index.html">Главная</a><span class="arrow">&#187;</span></li>
-          <li><a class="breadcrumps-link" href="catalog.html">Каталог</a><span class="arrow">&#187;</span></li>
-          <li>Сливочное</li>
-        </ul>
-
-        <div class="contacts-short">
-          <p class="schedule">с 10 до 20, ежедневно</p>
-          <a class="phone white" href="tel:88124502525">8 812 450-25-25</a>
-        </div>
       </div>
     </header>
 
     <main class="main">
-      <div class="main-wrapper">
-        <h1 class="main-title">Сливочное мороженое</h1>
+      <div class="wrapper">
+        <div class="holder">
+          <ul class="breadcrumps">
+            <li><a class="breadcrumps-link" href="index.html">Главная</a><span class="arrow">&#187;</span></li>
+            <li><a class="breadcrumps-link" href="catalog.html">Каталог</a><span class="arrow">&#187;</span></li>
+            <li>Сливочное</li>
+          </ul>
+
+          <div class="contacts-short">
+            <p class="schedule">с 10 до 20, ежедневно</p>
+            <a class="phone white" href="tel:88124502525">8 812 450-25-25</a>
+          </div>
+        </div>
+
+        <h1 class="catalog-title">Сливочное мороженое</h1>
 
         <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
-          <div>
-            <label class="subtitle" for="filter">Сортировка:</label>
-            <div>
-              <select class="filter" id="filter" name="filter">
-                <option value="by popularity">по популярности</option>
-                <option value="cheap first">сначала недорогие</option>
-                <option value="expensive first">сначала дорогие</option>
-                <option value="by fat">по жирности</option>
-              </select>
-            </div>
+          <div class="form-filter">
+            <label class="form-subtitle" for="filter">Сортировка:</label>
+            <select class="form-sorting" id="filter" name="filter">
+              <option value="by popularity">по популярности</option>
+              <option value="cheap first">сначала недорогие</option>
+              <option value="expensive first">сначала дорогие</option>
+              <option value="by fat">по жирности</option>
+            </select>
           </div>
 
-          <div>
-            <label class="subtitle" for="price-min" aria-label="Выбрать минимальную цену">Цена:
-              <input class="price-min" id="price-min" type="text" name="range" value=100> ₽
+          <div class="form-price">
+            <label class="form-subtitle" for="form-price-min" aria-label="Выбрать минимальную цену">
+              <span>Цена:</span>
+              <div class="form-price-container">
+                <input class="form-price-value" id="form-price-min" type="text" name="range" value=100>
+              </div>
             </label>
 
-            <span> - </span>
+            <span> ₽ - </span>
 
-            <input class="price-max" id="price-max" type="text" name="range" value="500">
-            <label for="price-max" aria-label="Выбрать максимуальную цену"> ₽</label>
+            <div class="form-price-container">
+              <input class="form-price-value" id="form-price-max" type="text" name="range" value="500">
+            </div>
+            <span> ₽</span>
+            <label for="form-price-max" aria-label="Выбрать максимуальную цену"></label>
 
             <div class="price-range">
-              <button type="button" name="price-min-button"></button>
+              <button type="button" name="form-price-min-button"></button>
               <div class="whole-range"></div>
               <div class="chosen-range"></div>
-              <button type="button" name="price-max-button"></button>
+              <button type="button" name="form-price-max-button"></button>
             </div>
           </div>
 
-          <fieldset class="fatness">
-            <legend class="subtitle">Жирность:</legend>
-            <ul class="fatness-container">
+          <fieldset class="form-fatness">
+            <legend class="form-subtitle">Жирность:</legend>
+            <ul class="form-fatness-container">
               <li>
                 <input type="radio" name="fat" value="fat-0%" id="fat-0">
                 <label for="fat-0">0</label>
@@ -153,7 +160,7 @@
           </fieldset>
 
           <fieldset class="filler">
-            <legend class="subtitle">Наполнители:</legend>
+            <legend class="form-subtitle">Наполнители:</legend>
             <ul class="filler-container">
               <li>
                 <input type="checkbox" name="chocolate" id="chocolate" checked>
@@ -295,7 +302,7 @@
 
     <footer class="main-footer">
       <hr class="hr">
-      <div class="main-wrapper footer-wrapper">
+      <div class="wrapper footer-wrapper">
         <section class="socials">
           <ul class="socials-container">
             <li class="socials-item">
