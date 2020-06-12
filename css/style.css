@@ -53,7 +53,7 @@ body {
   grid-template-rows: auto auto 60px;
 }
 
-.main-wrapper {
+.wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding-right: 27px;
@@ -75,6 +75,7 @@ body {
 }
 
 .button {
+  display: inline-block;
   padding: 11px 17px;
 
   font-weight: 700;
@@ -242,13 +243,17 @@ body {
   display: none;
 }
 
+.holder {
+  display: flex;
+}
+
 .contacts-short {
+  margin-left: auto;
+
   text-align: right;
 
   outline: 5px solid rgba(0, 0, 255, 0.3);
   outline-offset: -5px;
-
-  grid-column: -2 / -1;
 }
 
 .schedule {
@@ -520,6 +525,10 @@ body {
   text-decoration-color: var(--link-hover-underline);
 }
 
+.catalog {
+  display: grid;
+}
+
 .catalog-item .description {
   z-index: 2; /*Должен быть "выше" фона для работоспособности :hover*/
 
@@ -597,11 +606,13 @@ body {
   margin-right: 8px;
 }
 
-.main-title {
+.catalog-title {
   margin: 0;
+  margin-bottom: 25px;
 
   font-weight: 700;
   font-size: 35px;
+  line-height: 35px;
 }
 
 .catalog-list {
@@ -645,9 +656,21 @@ body {
 }
 
 .catalog-item .hit {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: inline-block;
+  width: 61px;
+  height: 61px;
+  padding: 18px 0;
+
+  font-size: 30px;
+  text-align: center;
   color: var(--black-darkest);
 
   background-color: var(--white);
+  border-radius: 50%;
 }
 
 .catalog-item-image {
@@ -684,19 +707,41 @@ body {
 
 .catalog-item .description {
   align-items: center;
-  padding: 0 5px;
 
   font-weight: 500;
   text-align: center;
 }
 
-.slider ul {
+.slider {
+  margin-top: -40px;
+  margin-bottom: -30px;
+  overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  width: 300%;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+  text-align: center;
+}
+
+.slider-item {
+  width: 100%;
+  min-height: 590px;
+}
+
+.slider-image {
+  margin-bottom: -270px;
 }
 
 .slider .description {
   align-self: center;
-  padding: 0 5px;
+  width: 680px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 
   font-weight: 700;
   font-size: 60px;
@@ -704,80 +749,168 @@ body {
   text-align: center;
 }
 
+.slider-button {
+  padding: 20px 40px;
+
+  font-size: 32px;
+}
+
 .banners {
+  margin-bottom: 40px;
+
   font-weight: 700;
 }
 
 .banners-container {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+
+  gap: 26px;
+  grid-template-columns: 560px 560px;
+}
+
+.raspberry {
+  background-color: var(--red-dark);
+}
+
+.chocolate {
+  background-color: var(--brown);
+}
+
+.banners-item {
+  display: flex;
+  flex-direction: column;
+  min-height: 230px;
+  padding: 18px 22px 22px 16px;
 }
 
 .banners-item .title {
+  margin: 0;
+  margin-bottom: 16px;
+
   font-size: 35px;
   line-height: 41px;
 }
 
 .banners-item .description {
+  margin: 0;
+  margin-bottom: 44px;
+
   font-size: 18px;
 }
 
+.banners-button {
+  margin-left: auto;
+}
+
 .main-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 869px;
+  margin-bottom: 40px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: var(--white);
 }
 
-.main-form .filter {
+.form-subtitle {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form-filter {
+  width: 196px;
+  margin-bottom: 14px;
+}
+
+.form-sorting {
+  width: 100%;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: var(--white);
+
+  background-color: var(--white-transparent);
 }
 
-.main-form .price-min,
-.main-form .price-max {
+.form-price {
+  width: 218px;
+  margin-bottom: 14px;
+
   font-size: 14px;
   line-height: 16px;
 }
 
-.main-form .subtitle {
-  font-size: 14px;
-  line-height: 16px;
+.form-price-container {
+  display: inline-block;
+  width: 28px;
 }
 
-.main-form .price-min,
-.main-form .price-max {
+.form-price-value {
+  width: 100%;
+
   font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
   color: var(--white);
 
   background-color: transparent;
-}
-
-.filter {
-  background-color: var(--white-transparent);
+  border: none;
 }
 
 .price-range {
   background-color: var(--white-transparent);
 }
 
-.fatness {
+.form-fatness {
+  width: 425px;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+
   background-color: var(--white-transparent);
 }
-.fatness-container {
+
+.form-fatness-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .filler {
+  margin: 0;
+  padding: 0;
+
   background-color: var(--white-transparent);
 }
 
 .filler-container {
+  display: flex;
+  justify-content: space-between;
+  width: 711px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 194px;
+  margin: 0 0 30px auto;
+  padding: 0;
+
   list-style: none;
   font-weight: 500;
   line-height: 18px;

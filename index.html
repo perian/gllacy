@@ -9,7 +9,7 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <div class="main-wrapper header-wrapper">
+      <div class="wrapper header-wrapper">
         <nav class="main-navigation">
           <a class="main-logo-link" aria-label="Логотип Глейси.">
             <img class="main-logo" src="img/logo.svg" width="154" height="64" alt="Логотип Глейси.">
@@ -62,32 +62,34 @@
             <a class="user-navigation-link basket" href=""><span class="visually-hidden">Корзина </span>Пусто</a>
           </div>
         </nav>
-
-        <div class="contacts-short">
-          <p class="schedule">с 10 до 20, ежедневно</p>
-          <a class="phone white" href="tel:88124502525">8 812 450-25-25</a>
-        </div>
       </div>
     </header>
 
     <main class="main">
-      <div class="main-wrapper">
+      <div class="wrapper">
+        <div class="holder">
+          <div class="contacts-short">
+            <p class="schedule">с 10 до 20, ежедневно</p>
+            <a class="phone white" href="tel:88124502525">8 812 450-25-25</a>
+          </div>
+        </div>
+
         <section class="slider">
-          <ul>
-            <li>
-              <img src="./img/two-ice-creams-1.png" width="647" height="584" alt="Два рожка с мороженным, бежевое с темным кремом и пломбир в перемешку с джемом.">
+          <ul class="slider-container">
+            <li class="slider-item">
+              <img class="slider-image" src="./img/two-ice-creams-1.png" width="647" height="584" alt="Два рожка с мороженным, бежевое с темным кремом и пломбир в перемешку с джемом.">
               <p class="description">Крем-брюле и пломбир с малиновым джемом</p>
-              <a class="button" href="">Давайте оба!</a>
+              <a class="button slider-button" href="">Давайте оба!</a>
             </li>
-            <li>
-              <img src="./img/two-ice-creams-2.png" width="647" height="584" alt="Два рожка с мороженным, шоколадное и сливчное с вкраплениями красноватого сорбета.">
+            <li class="slider-item">
+              <img class="slider-image" src="./img/two-ice-creams-2.png" width="647" height="584" alt="Два рожка с мороженным, шоколадное и сливчное с вкраплениями красноватого сорбета.">
               <p class="description">Шоколадный пломбир и лимонный сорбет</p>
-              <a class="button" href="">Давайте оба!</a>
+              <a class="button slider-button" href="">Давайте оба!</a>
             </li>
-            <li>
-              <img src="./img/two-ice-creams-3.png" width="647" height="584" alt="Два рожка с мороженным, белое, щедро полито темной помадкой и розовый щербет.">
+            <li class="slider-item">
+              <img class="slider-image" src="./img/two-ice-creams-3.png" width="647" height="584" alt="Два рожка с мороженным, белое, щедро полито темной помадкой и розовый щербет.">
               <p class="description">Пломбир с помадкой и клубничный щербет</p>
-              <a class="button" href="">Давайте оба!</a>
+              <a class="button slider-button" href="">Давайте оба!</a>
             </li>
           </ul>
         </section>
@@ -97,12 +99,12 @@
             <li class="banners-item raspberry">
               <h2 class="title">Малинка даром!</h2>
               <p class="description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-              <a class="button" href="">Хочу варенье!</a>
+              <a class="button banners-button" href="">Хочу варенье!</a>
             </li>
             <li class="banners-item chocolate">
               <h2 class="title">Шоколадки даром!</h2>
               <p class="description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-              <a class="button" href="">Хочу шоколадки!</a>
+              <a class="button banners-button" href="">Хочу шоколадки!</a>
             </li>
           </ul>
         </section>
@@ -194,7 +196,7 @@
         <div class="map">
           <img class="map-image" src="./img/map.png" width="1200" height="430" alt="Показано расположение магазина на карте города.">
         </div>
-        <div class="main-wrapper">
+        <div class="wrapper">
           <section class="contacts">
             <p class="address">
               Адрес главного офиса<br>
@@ -215,7 +217,7 @@
     </main>
 
     <footer class="main-footer">
-      <div class="main-wrapper footer-wrapper">
+      <div class="wrapper footer-wrapper">
         <section class="socials">
           <ul class="socials-container">
             <li class="socials-item">
