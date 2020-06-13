@@ -104,7 +104,9 @@
 
         <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-filter">
-            <label class="form-subtitle" for="filter">Сортировка:</label>
+            <div class="form-subtitle">
+              <label for="filter">Сортировка:</label>
+            </div>
             <select class="form-sorting" id="filter" name="filter">
               <option value="by popularity">по популярности</option>
               <option value="cheap first">сначала недорогие</option>
@@ -114,20 +116,23 @@
           </div>
 
           <div class="form-price">
-            <label class="form-subtitle" for="form-price-min" aria-label="Выбрать минимальную цену">
+            <div class="form-subtitle">
               <span>Цена:</span>
+
+              <label for="form-price-min" aria-label="Выбрать минимальную цену"></label>
               <div class="form-price-container">
                 <input class="form-price-value" id="form-price-min" type="text" name="range" value=100>
               </div>
-            </label>
 
-            <span> ₽ - </span>
+              <span> ₽ - </span>
 
-            <div class="form-price-container">
-              <input class="form-price-value" id="form-price-max" type="text" name="range" value="500">
+              <label for="form-price-max" aria-label="Выбрать максимуальную цену"></label>
+              <div class="form-price-container">
+                <input class="form-price-value" id="form-price-max" type="text" name="range" value="500">
+              </div>
+
+              <span> ₽</span>
             </div>
-            <span> ₽</span>
-            <label for="form-price-max" aria-label="Выбрать максимуальную цену"></label>
 
             <div class="price-range">
               <button type="button" name="form-price-min-button"></button>
@@ -138,7 +143,9 @@
           </div>
 
           <fieldset class="form-fatness">
-            <legend class="form-subtitle">Жирность:</legend>
+            <div class="form-subtitle">
+              <legend>Жирность:</legend>
+            </div>
             <ul class="form-fatness-container">
               <li>
                 <input type="radio" name="fat" value="fat-0%" id="fat-0">
@@ -159,9 +166,11 @@
             </ul>
           </fieldset>
 
-          <fieldset class="filler">
-            <legend class="form-subtitle">Наполнители:</legend>
-            <ul class="filler-container">
+          <fieldset class="form-filler">
+            <div class="form-subtitle">
+              <legend>Наполнители:</legend>
+            </div>
+            <ul class="form-filler-container">
               <li>
                 <input type="checkbox" name="chocolate" id="chocolate" checked>
                 <label for="chocolate">Шоколадные</label>

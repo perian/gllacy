@@ -81,6 +81,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  text-align: center;
   color: var(--white);
   text-decoration: none;
 
@@ -96,6 +97,8 @@ body {
 }
 
 .button-white {
+  width: 144px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -244,6 +247,9 @@ body {
 }
 
 .holder {
+  position: relative;
+  z-index: 1;
+
   display: flex;
 }
 
@@ -318,15 +324,14 @@ body {
 
 .content-wrapper {
   display: grid;
+  margin-bottom: 40px;
 
-  column-gap: 26px;
-
+  gap: 26px;
   grid-template-columns: 560px 560px;
   grid-template-rows: minmax(220px, auto);
 }
 
 .blog {
-  margin-bottom: 40px;
   padding-top: 23px;
   padding-right: 20px;
   padding-bottom: 23px;
@@ -368,7 +373,6 @@ body {
 }
 
 .subscription {
-  margin-bottom: 40px;
   padding-top: 34px;
   padding-right: 22px;
   padding-bottom: 40px;
@@ -429,12 +433,11 @@ body {
   position: absolute;
   top: 62px;
 
+  display: flex;
+  flex-direction: column;
   width: 302px;
   margin-left: 843px;
-  padding-top: 32px;
-  padding-right: 25px;
-  padding-bottom: 31px;
-  padding-left: 25px;
+  padding: 31px 25px;
 
   font-size: 14px;
   line-height: 20px;
@@ -445,12 +448,17 @@ body {
 
 .contacts .address {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .contacts .large {
   font-size: 18px;
   line-height: 24px;
+}
+
+.contacts .details {
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .phone {
@@ -729,24 +737,24 @@ body {
 }
 
 .slider-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   min-height: 590px;
 }
 
 .slider-image {
-  margin-bottom: -270px;
+  margin-bottom: -330px;
 }
 
 .slider .description {
-  align-self: center;
   width: 680px;
-  margin: 0 auto;
   margin-bottom: 20px;
 
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
-  text-align: center;
 }
 
 .slider-button {
@@ -820,6 +828,9 @@ body {
 }
 
 .form-subtitle {
+  margin-bottom: 7px;
+  margin-left: 16px;
+
   font-size: 14px;
   line-height: 16px;
 }
@@ -855,10 +866,10 @@ body {
 
 .form-price-value {
   width: 100%;
+  padding: 0;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  text-align: center;
   color: var(--white);
 
   background-color: transparent;
@@ -887,14 +898,14 @@ body {
   list-style: none;
 }
 
-.filler {
+.form-filler {
   margin: 0;
   padding: 0;
 
   background-color: var(--white-transparent);
 }
 
-.filler-container {
+.form-filler-container {
   display: flex;
   justify-content: space-between;
   width: 711px;
