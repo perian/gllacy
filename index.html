@@ -10,56 +10,98 @@
   <body class="page-body">
     <header class="main-header">
       <div class="wrapper header-wrapper">
-        <nav class="main-navigation">
+        <nav class="main-nav">
           <a class="main-logo-link" aria-label="Логотип Глейси.">
             <img class="main-logo" src="img/logo.svg" width="154" height="64" alt="Логотип Глейси.">
           </a>
 
-          <ul class="site-navigation">
-            <li class="site-navigation-item catalog-dropdown">
-              <a class="site-navigation-link" href="catalog.html">Каталог</a>
-              <ul>
-                <li><a href="">Новинки</a></li>
-                <li><a href="catalog.html">Сливочное</a></li>
-                <li><a href="">Щербеты</a></li>
-                <li><a href="">Фруктовый лед</a></li>
-                <li><a href="">Мелорин</a></li>
-              </ul>
+          <ul class="site-nav">
+            <li class="site-nav-item">
+              <div class="nav-catalog-container">
+                <a class="site-nav-link" href="catalog.html">Каталог</a>
+                <ul class="nav-catalog-list">
+                  <li class="nav-catalog-item new-items">
+                    Новинки
+                    <hr class="hr">
+                  </li>
+
+                  <li class="nav-catalog-item">
+                    <a class="nav-catalog-link" href="catalog.html">Сливочное</a>
+                  </li>
+
+                  <li class="nav-catalog-item">
+                    <a class="nav-catalog-link hover" href="">Щербеты</a>
+                  </li>
+
+                  <li class="nav-catalog-item">
+                    <a class="nav-catalog-link" href="">Фруктовый лед</a>
+                  </li>
+
+                  <li class="nav-catalog-item">
+                    <a class="nav-catalog-link" href="">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="site-navigation-item">
-              <a class="site-navigation-link" href="">Доставка и оплата</a>
+
+            <li class="site-nav-item">
+              <a class="site-nav-link" href="">Доставка и оплата</a>
             </li>
-            <li class="site-navigation-item">
-              <a class="site-navigation-link" href="">О Компании</a>
+
+            <li class="site-nav-item">
+              <a class="site-nav-link" href="">О Компании</a>
             </li>
           </ul>
 
-          <div class="user-navigation">
-            <a class="user-navigation-link search" href="">Поиск</a>
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <div>
-                <label class="visually-hidden" for="search">Поле поиска</label>
-                <input type="search" id="search" name="search" placeholder="Что ищем?">
+          <div class="user-nav">
+            <div class="user-nav-item">
+              <div class="search-container">
+                <a class="user-nav-link search" href="">
+                  <span class="visually-hidden text">Поиск</span>
+
+                  <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 17 17"><path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+                </a>
+
+                <form class="form-search" action="https://echo.htmlacademy.ru" method="post">
+                  <label class="visually-hidden" for="search">Поле поиска</label>
+                  <input class="user-nav-input" type="search" id="search" name="search" placeholder="Крем-брюле">
+                </form>
               </div>
-            </form>
+            </div>
 
-            <a class="user-navigation-link entry" href="">Вход</a>
-            <form class="entry-form" action="https://echo.htmlacademy.ru" method="post">
-              <div>
-                <label class="visually-hidden" for="login-email">Введите адрес электронной почты.</label>
-                <input type="email" id="login-email" name="login-email" placeholder="Электронная почта" required>
+            <div class="user-nav-item">
+              <div class="entrance-container">
+                <a class="user-nav-link entrance" href="">
+                  <svg class="entrance-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="19" viewBox="0 0 21 19"><g><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+                  <span class="text">Вход</span>
+                </a>
 
-                <label class="visually-hidden" for="login-password">Введите ваш пароль.</label>
-                <input type="password" id="login-password" name="login-password" placeholder="Пароль" required>
+                <form class="form-entrance" action="https://echo.htmlacademy.ru" method="post">
+                  <label class="visually-hidden" for="login-email">Введите адрес электронной почты.</label>
+                  <input class="user-nav-input" type="email" id="login-email" name="login-email" placeholder="email@example.com" required>
 
-                <button type="submit" name="enter">Войти</button>
+                  <label class="visually-hidden" for="login-password">Введите ваш пароль.</label>
+                  <input class="user-nav-input" type="password" id="login-password" name="login-password" placeholder="......" required>
 
-                <a href="">Забыли пароль?</a>
-                <a href="">Новая регистрация</a>
+                  <div class="box">
+                    <button class="button" type="submit" name="enter">Войти</button>
+
+                    <div class="user-account">
+                      <a class="user-account-link" href="">Забыли пароль?</a>
+                      <a class="user-account-link" href="">Новая регистрация</a>
+                    </div>
+                  </div>
+                </form>
               </div>
-            </form>
+            </div>
 
-            <a class="user-navigation-link basket" href=""><span class="visually-hidden">Корзина </span>Пусто</a>
+            <div class="user-nav-item basket-container">
+              <a class="user-nav-link basket" href="">
+                <svg class="basket-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
+
+                <span class="visually-hidden">Корзина </span>Пусто
+              </a>
+            </div>
           </div>
         </nav>
       </div>
@@ -70,6 +112,7 @@
         <div class="holder">
           <div class="contacts-short">
             <p class="schedule">с 10 до 20, ежедневно</p>
+
             <a class="phone white" href="tel:88124502525">8 812 450-25-25</a>
           </div>
         </div>
@@ -81,11 +124,13 @@
               <p class="description">Крем-брюле и пломбир с малиновым джемом</p>
               <a class="button slider-button" href="">Давайте оба!</a>
             </li>
+
             <li class="slider-item">
               <img class="slider-image" src="./img/two-ice-creams-2.png" width="647" height="584" alt="Два рожка с мороженным, шоколадное и сливчное с вкраплениями красноватого сорбета.">
               <p class="description">Шоколадный пломбир и лимонный сорбет</p>
               <a class="button slider-button" href="">Давайте оба!</a>
             </li>
+
             <li class="slider-item">
               <img class="slider-image" src="./img/two-ice-creams-3.png" width="647" height="584" alt="Два рожка с мороженным, белое, щедро полито темной помадкой и розовый щербет.">
               <p class="description">Пломбир с помадкой и клубничный щербет</p>
@@ -101,6 +146,7 @@
               <p class="description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
               <a class="button banners-button" href="">Хочу варенье!</a>
             </li>
+
             <li class="banners-item chocolate">
               <h2 class="title">Шоколадки даром!</h2>
               <p class="description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
@@ -174,18 +220,23 @@
         <div class="content-wrapper">
           <article class="blog">
             <p class="blog-subject">Новое в нашем блоге</p>
-            <a href=""><h2 class="blog-title">10 способов сервировки фруктовых щербетов к столу</h2></a>
+
+            <a href="">
+              <h2 class="blog-title">10 способов сервировки фруктовых щербетов к столу</h2>
+            </a>
           </article>
 
           <section class="subscription">
             <p class="subscription-desc">
               Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
             </p>
-            <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+
+            <form class="form-subscription" action="https://echo.htmlacademy.ru" method="post">
               <div class="form-field">
                 <label class="visually-hidden" for="subscription">Введите адрес электронной почты.</label>
                 <input class="subscription-input" type="email" id="subscription" name="subscription" placeholder="email@example.com">
               </div>
+
               <button class="button" type="submit">Отправить</button>
             </form>
           </section>
@@ -201,9 +252,12 @@
             <p class="address">
               Адрес главного офиса<br>
               и офлайн-магазина:<br>
-              <b class="large">ул. Большая Конюшенная<br>
-              19/8, Санкт-Петербург</b><br>
+              <b class="large">
+                ул. Большая Конюшенная<br>
+                19/8, Санкт-Петербург
+              </b><br>
             </p>
+
             <p class="details">
               Для заказов по телефону:<br>
               <a class="phone" href="tel:88124502525">8 812 450-25-25</a><br>
@@ -254,24 +308,24 @@
       </div>
     </footer>
 
-    <section class="visually-hidden">
-      <p>Мы обязательно вам ответим!</p>
-      <form class="" action="https://echo.htmlacademy.ru" method="post">
-        <div>
-          <label class="visually-hidden" for="name">Введите ваше имя.</label>
-          <input type="text" id="name" name="name" placeholder="Как вас зовут?" required>
+    <section class="feedback">
+      <p class="title">Мы обязательно вам ответим!</p>
 
-          <label class="visually-hidden" for="email">Введите вашу почту.</label>
-          <input type="email" id="email" name="email" placeholder="Ваша почта для ответа?" required>
-        </div>
+      <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="name">Введите ваше имя.</label>
+        <input class="feedback-input" type="text" id="name" name="name" placeholder="Имя Фамилия" required>
 
-        <textarea name="custumer-appeal" rows="8" cols="40" placeholder="Напишите что-нибудь..." aria-label="Впишите ваш вопрос." required></textarea>
+        <label class="visually-hidden" for="email">Введите вашу почту.</label>
+        <input class="feedback-input" type="email" id="email" name="email" placeholder="email@example.com" required>
 
-        <div>
-          <button type="submit">Отправить</button>
-        </div>
+        <textarea class="feedback-input feedback-textarea" name="custumer-appeal" rows="8" cols="40" placeholder="В свободной форме" aria-label="Впишите ваш вопрос." required></textarea>
+
+        <button class="button" type="submit">Отправить</button>
       </form>
-      <button type="button">Закрыть</button>
+
+      <button class="close-button" type="button" aria-label="Закрыть">
+        <svg class="close-button-image"xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#231F20" d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z"/></svg>
+      </button>
     </section>
   </body>
 </html>
