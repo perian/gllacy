@@ -5,6 +5,7 @@
   --black-main: #323232; /*gllacy advantages text, blog-section, request block, basket-item-price*/
   --blue: #8996a6; /*background-green*/
   --box-shadow: rgba(0, 0, 0, 0.4);
+  --box-shadow-active: #696969;/*navigation*/
   --brown: #53301c; /*banner-chocolate-bg*/
   --brown-pale: #9d8b84; /*background-brown*/
   --brown-sand: #f3e7d1; /*preferences-bg*/
@@ -12,7 +13,7 @@
   --button-bg-active: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #f26843 0%, #e74a35 100%);
   --button-bg-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #f26843 0%, #e74a35 100%);
   --button-shadow: rgba(172, 16, 0, 0.64);
-  --gray: #cacac7; /*hr*/
+  --gray: #cacac7; /*baasket-border*/
   --gray-dark: #999999; /*placeholders-text*/
   --gray-darkest: #5a5a5a; /*subscription-text*/
   --gray-pale: #f8f7f4; /*subscription, basket*/
@@ -188,19 +189,9 @@ body {
   line-height: 18px;
   color: var(--white);
   text-decoration: underline;
+  border-radius: 26px;
 
   text-decoration-color: var(--white-transparent);
-}
-
-.site-nav-link:not([href]) {
-  color: var(--white);
-  text-decoration: none;
-
-  background-color: var(--menu-no-link);
-}
-
-.site-nav-link:active {
-  background-color: var(--white-dark);
 }
 
 .site-nav-link:focus,
@@ -208,7 +199,18 @@ body {
   color: var(--black-main);
 
   background-color: var(--white);
-  border-radius: 26px;
+}
+
+.site-nav-link:active {
+  box-shadow: inset 0px 2px 1px var(--box-shadow-active);
+  background-color: var(--nav-active);
+}
+
+.site-nav-link:not([href]) {
+  color: var(--white);
+  text-decoration: none;
+
+  background-color: var(--menu-no-link);
 }
 
 .nav-catalog-list {
@@ -240,6 +242,13 @@ body {
   border-radius: 70px;
 }
 
+.nav-catalog-container:hover .site-nav-link:not([href]) {
+  color: var(--white);
+  text-decoration: none;
+
+  background-color: var(--menu-no-link);
+}
+
 .site-nav-link:focus ~ .nav-catalog-list,
 .nav-catalog-container:hover .nav-catalog-list {
   display: block;
@@ -247,21 +256,14 @@ body {
 
 .nav-catalog-item.new-items {
   margin-bottom: 5px;
-  padding: 10px 20px 0 21px;
+  padding: 10px 20px 9px 21px;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   color: var(--black-main);
-}
 
-.hr {
-  height: 1px;
-  margin: 9px -12px 0;
-
-  background-color: var(--white-transparent);
-  background-color: var(--white-pale-transparent);
-  border: none;
+  border-bottom: 1px solid var(--white-pale-transparent);
 }
 
 .nav-catalog-link {
@@ -276,8 +278,7 @@ body {
 }
 
 .nav-catalog-link:focus,
-.nav-catalog-link:hover,
-.nav-catalog-link.hover {
+.nav-catalog-link:hover {
   background-color: var(--menu-hover);
 }
 
@@ -286,6 +287,8 @@ body {
 }
 
 .nav-catalog-link:not([href]) {
+  color: var(--white);
+
   background-color: var(--menu-no-link);
 }
 
@@ -419,6 +422,8 @@ body {
   min-width: 92px;
   padding: 6px 16px 7px;
 
+  vertical-align: center;
+
   border-radius: 70px;
 }
 
@@ -509,7 +514,7 @@ body {
   border-radius: 70px;
 }
 
-.basket.active {
+.basket.not-empty {
   color: var(--black-main);
 
   background-color: var(--white);
@@ -553,9 +558,12 @@ body {
 
 .products-list {
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
 
   list-style: none;
+
+  border-bottom: 1px solid var(--gray);
 }
 
 .products-item {
@@ -612,11 +620,6 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
-}
-
-.products .hr {
-  margin: 0;
-  margin-bottom: 15px;
 }
 
 .products-total-price {
@@ -1338,20 +1341,18 @@ body {
   color: var(--white-transparent);
 }
 
+.main .wrapper {
+  border-bottom: 1px solid var(--white-transparent);
+}
+
 .main-footer {
   margin-bottom: 25px;
 }
 
-.main-footer .hr {
-  max-width: 1200px;
-  margin-top: 0;
-  margin-bottom: 18px;
-}
-
 .feedback {
-  position: absolute;
-  top: calc(50% - 441px/2);
-  right: calc(50% - 476px/2);
+  position: fixed;
+  top: 50%;
+  right: 50%;
   z-index: 999; /*Выше всех элементов*/
 
   display: block;
@@ -1361,6 +1362,7 @@ body {
 
   background-color: var(--gray-pale);
   border-radius: 6px;
+  transform: translate(50%,-50%);
 }
 
 .feedback .title {

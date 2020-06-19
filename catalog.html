@@ -18,19 +18,16 @@
           <ul class="site-nav">
             <li class="site-nav-item">
               <div class="nav-catalog-container">
-                <a class="site-nav-link" href="catalog.html">Каталог</a>
+                <a class="site-nav-link">Каталог</a>
                 <ul class="nav-catalog-list">
-                  <li class="nav-catalog-item new-items">
-                    Новинки
-                    <hr class="hr">
+                  <li class="nav-catalog-item new-items">Новинки</li>
+
+                  <li class="nav-catalog-item">
+                    <a class="nav-catalog-link">Сливочное</a>
                   </li>
 
                   <li class="nav-catalog-item">
-                    <a class="nav-catalog-link" href="catalog.html">Сливочное</a>
-                  </li>
-
-                  <li class="nav-catalog-item">
-                    <a class="nav-catalog-link hover" href="">Щербеты</a>
+                    <a class="nav-catalog-link" href="">Щербеты</a>
                   </li>
 
                   <li class="nav-catalog-item">
@@ -97,7 +94,7 @@
 
             <div class="user-nav-item">
               <div class="basket-container">
-                <a class="user-nav-link basket active" href="">
+                <a class="user-nav-link basket not-empty" href="">
                   <svg class="basket-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>
 
                   <span class="visually-hidden">Корзина </span>2 товара
@@ -135,8 +132,6 @@
                       </button>
                     </li>
                   </ul>
-
-                  <hr class="hr">
 
                   <p class="products-total-price">Итого: 750 руб.</p>
 
@@ -208,9 +203,8 @@
           </div>
 
           <fieldset class="form-fatness">
-            <div class="form-subtitle">
-              <legend>Жирность:</legend>
-            </div>
+            <legend class="form-subtitle">Жирность:</legend>
+
             <ul class="form-fatness-container">
               <li>
                 <input type="radio" name="fat" value="fat-0%" id="fat-0">
@@ -232,9 +226,8 @@
           </fieldset>
 
           <fieldset class="form-filler">
-            <div class="form-subtitle">
-              <legend>Наполнители:</legend>
-            </div>
+            <legend class="form-subtitle">Наполнители:</legend>
+
             <ul class="form-filler-container">
               <li>
                 <input type="checkbox" name="chocolate" id="chocolate" checked>
@@ -375,7 +368,6 @@
     </main>
 
     <footer class="main-footer">
-      <hr class="hr">
       <div class="wrapper footer-wrapper">
         <section class="socials">
           <ul class="socials-container">
