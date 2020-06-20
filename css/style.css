@@ -65,8 +65,7 @@ body {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding-right: 27px;
-  padding-left: 27px;
+  padding: 0 27px;
 }
 
 .visually-hidden {
@@ -139,6 +138,12 @@ body {
   grid-template-rows: min-content 1fr min-content;
 }
 
+.bg-light {
+  background-image: url(../img/bg-light.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+
 .header-wrapper {
   display: grid;
   margin-bottom: 2px;
@@ -150,6 +155,9 @@ body {
 }
 
 .main-nav {
+  position: relative;
+  z-index: 1;
+
   display: flex;
 
   grid-column: 1 / -1;
@@ -326,7 +334,7 @@ body {
 
 .user-nav-item {
   position: relative;
-  z-index: 2; /* Выше блока contacts-short(z-index 1), который выше блока slider*/
+  z-index: 2; /* Выше блока contacts-short(z-index 1)*/
 
   margin-bottom: 10px;
 }
@@ -707,8 +715,7 @@ body {
 }
 
 .preferences-item {
-  padding-top: 9px;
-  padding-left: 55px;
+  padding: 9px 4px 0 55px;
 
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1212,49 +1219,80 @@ body {
 }
 
 .slider {
+  position: relative;
+
   margin-top: -42px;
   margin-bottom: -26px;
-  overflow: hidden;
+
+  text-align: center;
+  color: var(--white);
 }
 
 .slider-container {
-  display: flex;
-  width: 300%;
   margin: 0;
   padding: 0;
 
   list-style: none;
-  text-align: center;
 }
 
 .slider-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
   min-height: 590px;
 }
 
+.slider-item-hidden {
+  display: none;
+}
+
 .slider-image {
-  margin-bottom: -330px;
+  margin-bottom: -275px;
 }
 
 .slider .description {
   width: 680px;
-  margin-bottom: 27px;
+  margin: 0 auto;
+  margin-bottom: 46px;
 
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
 }
 
-.slider-button {
-  padding: 20px 40px;
+.slider .button {
+  padding: 13px 40px;
 
   font-size: 32px;
 }
 
+.slider-controls {
+  position: absolute;
+  bottom: 89px;
+  left: 0;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  width: 79px;
+}
+
+.slider-button {
+  width: 21px;
+  height: 21px;
+  padding: 0;
+
+  background-color: transparent;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-button.current {
+  background-color: var(--white);
+}
+
 .banners {
+  position: relative;
+  z-index: 1;
+
   margin-bottom: 40px;
 
   font-weight: 700;
