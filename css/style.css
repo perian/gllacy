@@ -144,6 +144,10 @@ body {
   grid-template-rows: min-content 1fr min-content;
 }
 
+.main {
+  margin-bottom: 18px;
+}
+
 .bg-light {
   background-image: url(../img/bg-light.png);
   background-repeat: no-repeat;
@@ -172,7 +176,7 @@ body {
 }
 
 .main-logo-link {
-  margin-right: 9px;
+  margin-right: 10px;
 }
 
 .main-logo {
@@ -196,13 +200,13 @@ body {
 }
 
 .site-nav-item:not(:last-child) {
-  margin-right: 6px;
+  margin-right: 5px;
 }
 
 .site-nav-link {
   position: relative;
 
-  padding: 5px 13px 7px 14px;
+  padding: 5px 14px 7px;
 
   font-weight: 700;
   font-size: 16px;
@@ -222,6 +226,10 @@ body {
   width: calc(100% - 24px);
 
   border-bottom: 1px solid var(--link-underline);
+}
+
+.site-nav-link:not([href])::after {
+  border: none;
 }
 
 .site-nav-link:focus,
@@ -280,6 +288,8 @@ body {
 }
 
 .nav-catalog-item.new-items {
+  position: relative;
+
   margin-bottom: 5px;
   padding: 10px 20px 9px 21px;
 
@@ -293,7 +303,7 @@ body {
   content: "";
   position: absolute;
   top: 37px;
-  left: 6;
+  left: 6px;
 
   width: 90%;
 
@@ -721,7 +731,10 @@ body {
 }
 
 .phone.white {
+  display: block;
+
   font-size: 22px;
+  line-height: 22px;
   color: var(--white);
 }
 
@@ -922,8 +935,6 @@ body {
 
 .map-wrapper {
   position: relative;
-
-  margin-bottom: 18px;
 }
 
 .map {
@@ -1071,8 +1082,6 @@ body {
 .about-us-link:hover::after,
 .about-us-link:active::after,
 .about-us-link:focus::after {
-  color: var(--link-hover);
-
   border-color: var(--link-hover-underline);
 }
 
@@ -1100,6 +1109,10 @@ body {
 
 .catalog-item .description {
   z-index: 2; /*Должен быть "выше" фона для работоспособности :hover*/
+
+  display: block;
+  align-self: center;
+  width: 258px;
 
   color: var(--link);
   text-decoration: underline;
@@ -1180,7 +1193,7 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  padding-top: 26px;
+  padding-top: 24px;
 
   list-style: none;
   font-size: 14px;
@@ -1188,20 +1201,35 @@ body {
 }
 
 .breadcrumps-link {
-  margin-right: 8px;
+  position: relative;
+
+  margin-right: 5px;
 
   color: var(--link);
-  text-decoration: underline;
+  text-decoration: none;
+}
 
-  text-decoration-color: var(--link-underline);
+.breadcrumps-link::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 0;
+
+  width: 100%;
+
+  border-bottom: 1px solid var(--link-underline);
+}
+
+.breadcrumps-link:hover::after,
+.breadcrumps-link:active::after,
+.breadcrumps-link:focus::after {
+  border-color: var(--link-hover-underline);
 }
 
 .breadcrumps-link:hover,
 .breadcrumps-link:active,
 .breadcrumps-link:focus {
   color: var(--link-hover);
-
-  text-decoration-color: var(--link-hover-underline);
 }
 
 .breadcrumps .arrow {
@@ -1214,13 +1242,13 @@ body {
 
   font-weight: 700;
   font-size: 35px;
-  line-height: 35px;
+  line-height: 30px;
 }
 
 .catalog-list {
   display: grid;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 75px;
   padding: 0;
 
   list-style: none;
@@ -1305,7 +1333,7 @@ body {
 .slider {
   position: relative;
 
-  margin-top: -42px;
+  margin-top: -39px;
   margin-bottom: -26px;
 
   text-align: center;
@@ -1541,17 +1569,28 @@ body {
 
 .pagination {
   display: flex;
-  justify-content: space-between;
-  width: 194px;
   margin: 0 0 30px auto;
   padding: 0;
 
   list-style: none;
-  font-weight: 500;
-  line-height: 18px;
 }
+
+.pagination-item:not(:nth-last-child(2)) {
+  margin-right: 4px;
+}
+
 .pagination-link {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  width: 26px;
+  height: 26px;
+
   color: var(--white);
+
+  border-radius: 26px;
 }
 
 .pagination-link:hover {
@@ -1559,15 +1598,27 @@ body {
 }
 
 .pagination-link:active,
-.pagination-link:not([href]) {
+.pagination-link.current {
   color: var(--black-main);
 
   background-color: var(--white);
+}
+.arrow-back {
+  margin-right: 18px;
+}
+
+.arrow-forward {
+  margin-left: 18px;
+}
+
+.arrow-forward-icon {
+  fill: var(--white);
 }
 
 .arrow-back-link,
 .arrow-forward-link {
   color: var(--white);
+  line-height: 26px;
 }
 
 .arrow-back-link:not([href]),
