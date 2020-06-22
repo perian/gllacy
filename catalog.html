@@ -172,42 +172,47 @@
         <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-filter">
             <div class="form-subtitle">
-              <label for="filter">Сортировка:</label>
+              <label for="filter">Сортировка:
+
+              </label>
             </div>
             <select class="form-sorting" id="filter" name="filter">
-              <option value="by popularity">по популярности</option>
-              <option value="cheap first">сначала недорогие</option>
-              <option value="expensive first">сначала дорогие</option>
-              <option value="by fat">по жирности</option>
+              <option class="form-sorting-item" value="by popularity">по популярности</option>
+              <option class="form-sorting-item" value="cheap first">сначала недорогие</option>
+              <option class="form-sorting-item" value="expensive first">сначала дорогие</option>
+              <option class="form-sorting-item" value="by fat">по жирности</option>
             </select>
           </div>
 
-          <div class="form-price">
-            <div class="form-subtitle">
+          <fieldset class="form-price">
+            <legend class="form-subtitle form-price-controls">
               <span>Цена:</span>
 
-              <label for="form-price-min" aria-label="Выбрать минимальную цену"></label>
-              <div class="form-price-container">
-                <input class="form-price-value" id="form-price-min" type="text" name="range" value=100>
-              </div>
+              <label class="form-price-container" for="form-price-min" aria-label="Выбрать минимальную цену">
+                <input class="form-price-value" id="form-price-min" type="number" name="range" value="100">
+              </label>
 
-              <span> ₽ - </span>
+              <span> ₽ –</span>
 
-              <label for="form-price-max" aria-label="Выбрать максимуальную цену"></label>
-              <div class="form-price-container">
-                <input class="form-price-value" id="form-price-max" type="text" name="range" value="500">
-              </div>
+              <label class="form-price-container" for="form-price-max" aria-label="Выбрать максимуальную цену">
+                <input class="form-price-value" id="form-price-max" type="number" name="range" value="500">
+              </label>
 
               <span> ₽</span>
-            </div>
+            </legend>
 
             <div class="price-range">
-              <button type="button" name="form-price-min-button"></button>
-              <div class="whole-range"></div>
-              <div class="chosen-range"></div>
-              <button type="button" name="form-price-max-button"></button>
+              <div class="scale">
+                <div class="bar" style="width: 56%; margin-left: 4%"></div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 7%">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
+                </div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 63%">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23" ><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
+                </div>
+              </div>
             </div>
-          </div>
+          </fieldset>
 
           <fieldset class="form-fatness">
             <legend class="form-subtitle">Жирность:</legend>
@@ -258,7 +263,7 @@
             </ul>
           </fieldset>
 
-          <button class="button button-white" type="submit">Применить</button>
+          <button class="button form-filler-button" type="submit">Применить</button>
         </form>
 
         <section class="catalog">
