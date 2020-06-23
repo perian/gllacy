@@ -172,9 +172,7 @@
         <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-filter">
             <div class="form-subtitle">
-              <label for="filter">Сортировка:
-
-              </label>
+              <label for="filter">Сортировка:</label>
             </div>
             <select class="form-sorting" id="filter" name="filter">
               <option class="form-sorting-item" value="by popularity">по популярности</option>
@@ -219,20 +217,22 @@
 
             <ul class="form-fatness-container">
               <li>
-                <input type="radio" name="fat" value="fat-0%" id="fat-0">
-                <label for="fat-0">0</label>
+                <input class="radio-input visually-hidden" type="radio" name="fat" value="fat-0%" id="fat-0">
+                <label class="radio-label" for="fat-0">
+                  0%
+                </label>
               </li>
               <li>
-                <input type="radio" name="fat" value="fat-10%" id="fat-10" checked>
-                <label for="fat-10">До 10%</label>
+                <input class="radio-input visually-hidden" type="radio" name="fat" value="fat-10%" id="fat-10" checked>
+                <label class="radio-label" for="fat-10">до 10%</label>
               </li>
               <li>
-                <input type="radio" name="fat" value="fat-30%" id="fat-30">
-                <label for="fat-30">До 30%</label>
+                <input class="radio-input visually-hidden" type="radio" name="fat" value="fat-30%" id="fat-30">
+                <label class="radio-label" for="fat-30">до 30%</label>
               </li>
               <li>
-                <input type="radio" name="fat" value="fat-above-30%" id="fat-above-30">
-                <label for="fat-above-30">Выше 30%</label>
+                <input class="radio-input visually-hidden" type="radio" name="fat" value="fat-above-30%" id="fat-above-30">
+                <label class="radio-label" for="fat-above-30">выше 30%</label>
               </li>
             </ul>
           </fieldset>
@@ -242,23 +242,23 @@
 
             <ul class="form-filler-container">
               <li>
-                <input type="checkbox" name="chocolate" id="chocolate" checked>
-                <label for="chocolate">Шоколадные</label>
+                <input class="checkbox-input visually-hidden" type="checkbox" name="chocolate" id="chocolate" checked>
+                <label class="checkbox-label" for="chocolate">шоколадные</label>
               </li>
               <li>
-                <input type="checkbox" name="sugar-powders" id="sugar-powders" checked>
-                <label for="sugar-powders">Сахарные присыпки</label>
+                <input class="checkbox-input visually-hidden" type="checkbox" name="sugar-powders" id="sugar-powders" checked>
+                <label class="checkbox-label" for="sugar-powders">сахарные присыпки</label>
               </li>
               <li>
-                <input type="checkbox" name="fruits" id="fruits">
-                <label for="fruits">Фрукты</label>
+                <input class="checkbox-input visually-hidden" type="checkbox" name="fruits" id="fruits">
+                <label class="checkbox-label" for="fruits">фрукты</label>
               </li>
               <li>
-                <input type="checkbox" name="sirops" id="sirops">
-                <label for="sirops">Сиропы</label></li>
+                <input class="checkbox-input visually-hidden" type="checkbox" name="sirops" id="sirops">
+                <label class="checkbox-label" for="sirops">сиропы</label></li>
               <li>
-                <input type="checkbox" name="jams" id="jams">
-                <label for="jams">Джемы</label>
+                <input class="checkbox-input visually-hidden" type="checkbox" name="jams" id="jams">
+                <label class="checkbox-label" for="jams">джемы</label>
               </li>
             </ul>
           </fieldset>
@@ -389,7 +389,7 @@
             </li>
             <li class="arrow-forward">
               <a class="arrow-forward-link" href="" aria-label="Следующая страница">
-                <svg class="arrow-forward-icon"xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="#C1C6CE"><path d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
+                <svg class="arrow-forward-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="#C1C6CE"><path d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
               </a>
             </li>
           </ul>
