@@ -1516,8 +1516,19 @@ body {
 }
 
 .form-filter {
+  position: relative;
   width: 196px;
   margin-bottom: 13px;
+}
+
+.filter-icon {
+  position: absolute;
+  top: 35px;
+  left: 171px;;
+}
+
+.form-sorting:hover ~ .filter-icon {
+  fill: var(--black-main);
 }
 
 .form-sorting {
@@ -1668,31 +1679,40 @@ input[type=number] {
   padding-left: 33px;
 }
 
-.radio-label::after,
-.radio-label::before {
-  content: "";
+.radio-on,
+.radio-off {
   position: absolute;
   top: -2px;
   left: 0;
 
+  opacity: 0.8;
+
+  fill: var(--white);
+}
+
+.radio-on:hover,
+.radio-off:hover {
+  opacity: 1;
+}
+
+.radio-on:active,
+.radio-off:active {
+  opacity: 0.4;
+}
+
+.radio-input:checked ~ .radio-on {
   display: block;
-  width: 22px;
-  height: 22px;
-
-  background-repeat: no-repeat;
 }
 
-.radio-label::before {
-  background-image: url(../img/radio-off.svg);
-}
-
-.radio-label::after {
+.radio-input:checked ~ .radio-off {
   display: none;
-
-  background-image: url(../img/radio-on.svg);
 }
 
-.radio-input:checked ~ .radio-label::after {
+.radio-input:not(:checked) ~ .radio-on {
+  display: none;
+}
+
+.radio-input:not(:checked) ~ .radio-off {
   display: block;
 }
 
@@ -1730,37 +1750,41 @@ input[type=number] {
   padding-left: 33px;
 }
 
-.checkbox-label::after,
-.checkbox-label::before {
-  content: "";
+.checkbox-on,
+.checkbox-off {
   position: absolute;
   top: 1px;
   left: 0;
 
-  display: block;
-  width: 20px;
-  height: 20px;
+  opacity: 0.8;
 
-  background-repeat: no-repeat;
+  fill: var(--white);
 }
 
-.checkbox-label::before {
-  background-image: url(../img/checkbox-off.svg);
+.checkbox-on:hover,
+.checkbox-off:hover {
+  opacity: 1;
 }
 
-.checkbox-label::after {
+.checkbox-on:active,
+.checkbox-off:active {
+  opacity: 0.4;
+}
+
+.checkbox-input:checked ~ .checkbox-on {
+  display: inline-block;
+}
+
+.checkbox-input:checked ~ .checkbox-off {
   display: none;
-  width: 24px;
-
-  background-image: url(../img/checkbox-on.svg);
 }
 
-.checkbox-input:checked ~ .checkbox-label::before {
+.checkbox-input:not(:checked) ~ .checkbox-on {
   display: none;
 }
 
-.checkbox-input:checked ~ .checkbox-label::after {
-  display: block;
+.checkbox-input:not(:checked) ~ .checkbox-off {
+  display: inline-block;
 }
 
 .pagination {
