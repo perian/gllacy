@@ -541,6 +541,8 @@ body {
   padding: 14px 26px;
 
   line-height: 16px;
+  box-shadow: 0 2px 2px var(--box-shadow-bg);
+  text-shadow: none;
 }
 
 .box {
@@ -724,6 +726,9 @@ body {
 .products .button {
   align-self: flex-end;
   padding: 10px 15px;
+
+  box-shadow: 0 2px 2px var(--box-shadow-bg);
+  text-shadow: none;
 }
 
 .holder {
@@ -956,12 +961,23 @@ body {
 }
 
 .map {
+  position: relative;
+
   height: 430px;
   overflow: hidden;
 }
 
+.map .pin {
+  position: absolute;
+  top: 33%;
+  left: 22.5%;
+}
+
 .map-image {
   width: 100%;
+  height: 430px;
+
+  object-fit: cover;
 }
 
 .contacts {
@@ -1321,6 +1337,7 @@ body {
 
 .catalog-item .button {
   align-self: center;
+  text-shadow: none;
 }
 
 .catalog-item:hover .button {
@@ -1517,6 +1534,7 @@ body {
 
 .form-filter {
   position: relative;
+
   width: 196px;
   margin-bottom: 13px;
 }
@@ -1580,15 +1598,16 @@ body {
   border: none;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+/* Убираем стрелочки переключения значений цены*/
+.form-price-value::-webkit-outer-spin-button,
+.form-price-value::-webkit-inner-spin-button {
   margin: 0;
 
   -webkit-appearance: none;
 }
 
 /* Firefox */
-input[type=number] {
+.form-price-value[type=number] {
   -moz-appearance: textfield;
 }
 
@@ -1931,6 +1950,7 @@ input[type=number] {
   padding-left: 24px;
 
   cursor: pointer;
+  text-shadow: none;
 }
 
 .feedback .close-button {
