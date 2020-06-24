@@ -3,7 +3,7 @@
   --black-dark: #2c2829; /*close-button bg*/
   --black-darkest: #231f20; /*hits*/
   --black-main: #323232; /*gllacy advantages text, blog-section, request block, basket-item-price*/
-  --blue: #8996a6; /*background-green*/
+  --blue: #92CDFF; /*sbuscription-bg/border*/
   --box-shadow: rgba(0, 0, 0, 0.4);
   --box-shadow-active: #696969;/*navigation*/
   --box-shadow-bg: rgba(85, 8, 0, 0.54);
@@ -898,7 +898,9 @@ body {
   width: 560px;
   height: 220px;
 
+  background-color: var(--blue);
   background-image: url(../img/bg-email.png);
+  border-radius: 16px;
 }
 
 .subscription-desc {
@@ -1547,7 +1549,8 @@ body {
   left: 171px;;
 }
 
-.form-sorting:hover ~ .filter-icon {
+.form-sorting:hover ~ .filter-icon,
+.form-sorting:focus ~ .filter-icon {
   fill: var(--black-main);
 }
 
@@ -1569,7 +1572,8 @@ body {
      -moz-appearance: none;
 }
 
-.form-sorting:hover {
+.form-sorting:hover,
+.form-sorting:focus {
   color: var(--black-main);
 
   cursor: pointer;
@@ -1776,6 +1780,8 @@ body {
   position: absolute;
   top: 1px;
   left: 0;
+
+  vertical-align: middle;
 
   opacity: 0.8;
 
