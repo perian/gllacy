@@ -728,7 +728,6 @@ body {
   padding: 10px 15px;
 
   box-shadow: 0 2px 2px var(--box-shadow-bg);
-  text-shadow: none;
 }
 
 .holder {
@@ -1504,9 +1503,6 @@ body {
   margin-left: auto;
   padding: 12px 22px;
 
-  text-shadow: none;
-  text-shadow: none;
-
   border-radius: 26px;
   box-shadow: 0 2px 2px var(--box-shadow-bg);
 }
@@ -1950,7 +1946,6 @@ body {
   padding-left: 24px;
 
   cursor: pointer;
-  text-shadow: none;
 }
 
 .feedback .close-button {
