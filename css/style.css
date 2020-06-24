@@ -541,8 +541,9 @@ body {
   padding: 14px 26px;
 
   line-height: 16px;
-  box-shadow: 0 2px 2px var(--box-shadow-bg);
   text-shadow: none;
+
+  box-shadow: 0 2px 2px var(--box-shadow-bg);
 }
 
 .box {
@@ -1336,6 +1337,7 @@ body {
 
 .catalog-item .button {
   align-self: center;
+
   text-shadow: none;
 }
 
@@ -1532,7 +1534,11 @@ body {
   position: relative;
 
   width: 196px;
+  margin: 0;
   margin-bottom: 13px;
+  padding: 0;
+
+  border: none;
 }
 
 .filter-icon {

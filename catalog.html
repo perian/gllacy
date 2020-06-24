@@ -162,10 +162,9 @@
         <h1 class="catalog-title">Сливочное мороженое</h1>
 
         <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form-filter">
-            <div class="form-subtitle">
-              <label for="filter">Сортировка:</label>
-            </div>
+          <fieldset class="form-filter">
+            <legend class="form-subtitle" for="filter">Сортировка:</legend>
+
             <select class="form-sorting" id="filter" name="filter">
               <option class="form-sorting-item" value="by popularity">по популярности</option>
               <option class="form-sorting-item" value="cheap first">сначала недорогие</option>
@@ -173,7 +172,7 @@
               <option class="form-sorting-item" value="by fat">по жирности</option>
             </select>
             <svg class="filter-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="#ECF1EE"><path d="M5.5 10L0 0h11"/></svg>
-          </div>
+          </fieldset>
 
           <fieldset class="form-price">
             <legend class="form-subtitle form-price-controls">
@@ -217,6 +216,7 @@
                   0%
                 </label>
               </li>
+
               <li>
                 <label class="radio-label" for="fat-10">
                   <input class="radio-input visually-hidden" type="radio" name="fat" value="fat-10%" id="fat-10" checked>
@@ -225,6 +225,7 @@
                   до 10%
                 </label>
               </li>
+
               <li>
                 <label class="radio-label" for="fat-30">
                   <input class="radio-input visually-hidden" type="radio" name="fat" value="fat-30%" id="fat-30">
@@ -233,6 +234,7 @@
                   до 30%
                 </label>
               </li>
+
               <li>
                 <label class="radio-label" for="fat-above-30">
                   <input class="radio-input visually-hidden" type="radio" name="fat" value="fat-above-30%" id="fat-above-30">
