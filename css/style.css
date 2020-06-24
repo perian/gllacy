@@ -1725,6 +1725,14 @@ body {
   opacity: 0.4;
 }
 
+.radio-input:disabled ~ .radio-off {
+  opacity: 0.3;
+}
+
+.radio-input:disabled ~ .radio-off {
+  opacity: 0.3;
+}
+
 .radio-input:checked ~ .radio-on {
   display: block;
 }
@@ -1796,6 +1804,10 @@ body {
 .checkbox-on:active,
 .checkbox-off:active {
   opacity: 0.4;
+}
+
+.checkbox-input:disabled ~ .checkbox-off {
+  opacity: 0.3;
 }
 
 .checkbox-input:checked ~ .checkbox-on {
