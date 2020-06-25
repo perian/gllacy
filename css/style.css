@@ -3,7 +3,7 @@
   --black-dark: #2c2829; /*close-button bg*/
   --black-darkest: #231f20; /*hits*/
   --black-main: #323232; /*gllacy advantages text, blog-section, request block, basket-item-price*/
-  --blue: #92CDFF; /*sbuscription-bg/border*/
+  --blue: #92cdff; /*sbuscription-bg/border*/
   --box-shadow: rgba(0, 0, 0, 0.4);
   --box-shadow-active: #696969;/*navigation*/
   --box-shadow-bg: rgba(85, 8, 0, 0.54);
@@ -973,13 +973,22 @@ body {
   position: absolute;
   top: 33%;
   left: 22.5%;
+  z-index: -1;
 }
 
 .map-image {
+  position: relative;
+  z-index: -1;
+
   width: 100%;
   height: 430px;
 
   object-fit: cover;
+}
+
+.google-map {
+  width: 100%;
+  height: 430px;
 }
 
 .contacts {
@@ -1577,6 +1586,10 @@ body {
   color: var(--black-main);
 
   cursor: pointer;
+}
+
+.form-sorting:focus {
+  background-color: var(--white);
 }
 
 .form-sorting-item {
