@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style-minimized.css">
   </head>
-  <body class="page-body">
+  <body class="page-body bg-light-catalog">
     <header class="main-header">
       <div class="wrapper header-wrapper">
         <nav class="main-nav">
@@ -56,7 +56,7 @@
                 <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 17 17"><path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
               </a>
 
-              <form class="form-search" action="https://echo.htmlacademy.ru" method="post" aria-label="submenu">
+              <form class="form-search" action="https://echo.htmlacademy.ru" method="get" aria-label="submenu">
                 <label class="visually-hidden" for="search">Поле поиска</label>
                 <input class="user-nav-input" type="search" id="search" name="search" placeholder="Крем-брюле">
               </form>
@@ -163,7 +163,7 @@
 
         <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form-filter">
-            <legend class="form-subtitle" for="filter">Сортировка:</legend>
+            <legend class="form-subtitle">Сортировка:</legend>
 
             <select class="form-sorting" id="filter" name="filter">
               <option class="form-sorting-item" value="by popularity">по популярности</option>
