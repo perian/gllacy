@@ -185,7 +185,7 @@ body {
   background-position-x: 50%;
 }
 
-.bg-light-catalog::before {
+.bg-light-catalog {
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
   background-repeat: no-repeat;
 }
@@ -952,30 +952,24 @@ body {
   position: relative;
 
   width: 548px;
-  margin-top: 6px;
-  margin-left: 6px;
+  margin: 6px;
   padding: 17px 14px;
 
   background-color: var(--gray-pale);
-  border-width: 6px;
-  border-style: solid;
-  border-color: transparent;
   border-radius: 16px;
 }
 
 .subscription:before {
   content: "";
   position: absolute;
-  top: -12px;
-  left: -12px;
-  z-index: -1; /* Прячем под основной блок, создается эффект border */
+  top: -6px;
+  left: -6px;
+  z-index: -1;
 
   width: 560px;
-  min-height: 220px;
+  height: calc(100% + 12px);
 
-  background-color: var(--blue);
-  background-image: url(../img/bg-email.png);
-  background-repeat: round;
+  background-image: repeating-linear-gradient(135deg,#f8f7f4,#f8f7f4 7px,#92cdff 7px,#92cdff 14px,#f8f7f4 14px,#f8f7f4 21px,#fe9e90 21px,#fe9e90 28px);
   border-radius: 16px;
 }
 
@@ -1162,7 +1156,7 @@ body {
   width: 36px;
   height: 36px;
 
-  border: 2px solid var(--white-pale-transparent);
+  border: 2px solid var(--white-light-transparent);
   border-radius: 50%;
 }
 
@@ -1176,7 +1170,7 @@ body {
 }
 
 .socials-link:active {
-  border-color: var(--white-light-transparent);
+  border-color: var(--white-pale-transparent);
 }
 
 .about-us {
@@ -1495,6 +1489,8 @@ body {
   text-align: center;
   color: var(--white);
 }
+
+/*При переключении slider-controls, slider-item-x меняет фоновый цвет всей страницы, добавлен в тэг body*/
 
 .slider-item-1 {
   background-color: var(--main-bg-1);
