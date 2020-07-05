@@ -1423,6 +1423,7 @@ body {
   margin-top: -6px;
 
   text-align: center;
+  border-radius: 4px;
 }
 
 .catalog-item:hover .catalog-item-background {
