@@ -458,21 +458,20 @@ body {
 .user-nav-input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
   color: var(--gray-dark);
 }
 
 .user-nav-input::-moz-placeholder {
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
   color: var(--gray-dark);
 }
 
 .user-nav-input::placeholder {
+  padding-top: 10px;
+
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
   color: var(--gray-dark);
 }
 
@@ -1423,6 +1422,7 @@ body {
   margin-top: -6px;
 
   text-align: center;
+
   border-radius: 4px;
 }
 
