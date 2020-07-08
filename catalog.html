@@ -141,14 +141,12 @@
       <div class="wrapper line">
         <div class="holder">
           <ul class="breadcrumps">
-            <li>
+            <li class="breadcrumps-item">
               <a class="breadcrumps-link" href="index.html">Главная</a>
-              <span class="arrow">&#187;</span>
             </li>
 
-            <li>
+            <li class="breadcrumps-item">
               <a class="breadcrumps-link" href="catalog.html">Каталог</a>
-              <span class="arrow">&#187;</span>
             </li>
             <li>Сливочное</li>
           </ul>
@@ -163,7 +161,7 @@
 
         <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form-filter">
-            <legend class="form-subtitle">Сортировка:</legend>
+            <label class="form-subtitle" for="filter">Сортировка:</label>
 
             <select class="form-sorting" id="filter" name="filter">
               <option class="form-sorting-item" value="by popularity">по популярности</option>
@@ -195,10 +193,10 @@
               <div class="scale">
                 <div class="bar" style="width: 56%; margin-left: 4%"></div>
                 <div class="toggle toggle-min" tabindex="0" style="left: 7%">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
+                  <svg class="circle" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
                 </div>
                 <div class="toggle toggle-max" tabindex="0" style="left: 63%">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23" ><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
+                  <svg class="circle" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
                 </div>
               </div>
             </div>
@@ -209,39 +207,23 @@
 
             <ul class="form-fatness-container">
               <li class="form-fatness-item">
-                <label class="radio-label" for="fat-0">
-                  <input class="radio-input visually-hidden" type="radio" name="fat" value="fat-0%" id="fat-0">
-                  <svg class="radio-on" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="#FFFFFF" cx="12.5" cy="12.5" r="4.5"/></svg>
-                  <svg class="radio-off" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg>
-                  0%
-                </label>
+                <input class="radio-input visually-hidden" type="radio" name="fat" value="fat-0%" id="fat-0">
+                <label class="radio-label" for="fat-0">0%</label>
               </li>
 
               <li class="form-fatness-item">
-                <label class="radio-label" for="fat-10">
-                  <input class="radio-input visually-hidden" type="radio" name="fat" value="fat-10%" id="fat-10" checked>
-                  <svg class="radio-on" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="#FFFFFF" cx="12.5" cy="12.5" r="4.5"/></svg>
-                  <svg class="radio-off" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg>
-                  до 10%
-                </label>
+                <input class="radio-input visually-hidden" type="radio" name="fat" value="fat-10%" id="fat-10" checked>
+                <label class="radio-label" for="fat-10">до 10%<label>
               </li>
 
               <li class="form-fatness-item">
-                <label class="radio-label" for="fat-30">
-                  <input class="radio-input visually-hidden" type="radio" name="fat" value="fat-30%" id="fat-30">
-                  <svg class="radio-on" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="#FFFFFF" cx="12.5" cy="12.5" r="4.5"/></svg>
-                  <svg class="radio-off" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg>
-                  до 30%
-                </label>
+                <input class="radio-input visually-hidden" type="radio" name="fat" value="fat-30%" id="fat-30">
+                <label class="radio-label" for="fat-30">до 30%</label>
               </li>
 
               <li class="form-fatness-item">
-                <label class="radio-label" for="fat-above-30">
-                  <input class="radio-input visually-hidden" type="radio" name="fat" value="fat-above-30%" id="fat-above-30">
-                  <svg class="radio-on" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="#FFFFFF" cx="12.5" cy="12.5" r="4.5"/></svg>
-                  <svg class="radio-off" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg>
-                  выше 30%
-                </label>
+                <input class="radio-input visually-hidden" type="radio" name="fat" value="fat-above-30%" id="fat-above-30">
+                <label class="radio-label" for="fat-above-30">выше 30%</label>
               </li>
             </ul>
           </fieldset>
@@ -251,44 +233,24 @@
 
             <ul class="form-filler-container">
               <li class="form-filler-item">
-                <label class="checkbox-label" for="chocolate">
-                  <input class="checkbox-input visually-hidden" type="checkbox" name="chocolate" id="chocolate" checked>
-                  <svg class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
-                  <svg class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
-                  шоколадные
-                </label>
+                <input class="checkbox-input visually-hidden" type="checkbox" name="chocolate" id="chocolate" checked>
+                <label class="checkbox-label" for="chocolate">шоколадные</label>
               </li>
               <li class="form-filler-item">
-                <label class="checkbox-label" for="sugar-powders">
-                  <input class="checkbox-input visually-hidden" type="checkbox" name="sugar-powders" id="sugar-powders" checked>
-                  <svg class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
-                  <svg class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
-                  сахарные присыпки
-                </label>
+                <input class="checkbox-input visually-hidden" type="checkbox" name="sugar-powders" id="sugar-powders" checked>
+                <label class="checkbox-label" for="sugar-powders">сахарные присыпки</label>
               </li>
               <li class="form-filler-item">
-                <label class="checkbox-label" for="fruits">
-                  <input class="checkbox-input visually-hidden" type="checkbox" name="fruits" id="fruits">
-                  <svg class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
-                  <svg class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
-                  фрукты
-                </label>
+                <input class="checkbox-input visually-hidden" type="checkbox" name="fruits" id="fruits">
+                <label class="checkbox-label" for="fruits">фрукты</label>
               </li>
               <li class="form-filler-item">
-                <label class="checkbox-label" for="sirops">
-                  <input class="checkbox-input visually-hidden" type="checkbox" name="sirops" id="sirops">
-                  <svg class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
-                  <svg class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
-                  сиропы
-                </label>
+                <input class="checkbox-input visually-hidden" type="checkbox" name="sirops" id="sirops">
+                <label class="checkbox-label" for="sirops">сиропы</label>
               </li>
               <li class="form-filler-item">
-                <label class="checkbox-label" for="jams">
-                  <input class="checkbox-input visually-hidden" type="checkbox" name="jams" id="jams">
-                  <svg class="checkbox-on" xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
-                  <svg class="checkbox-off" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
-                  джемы
-                </label>
+                <input class="checkbox-input visually-hidden" type="checkbox" name="jams" id="jams">
+                <label class="checkbox-label" for="jams">джемы</label>
               </li>
             </ul>
           </fieldset>
