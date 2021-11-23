@@ -1,1 +1,1 @@
-[perian](https://perian.github.io/gllacy/)
+[Ссылка на сайт проекта](https://perian.github.io/gllacy/)
